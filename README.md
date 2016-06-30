@@ -1,16 +1,16 @@
-This is my resume in LaTeX
+# Resume
+This is [Scott Clark](https://github.com/sc932)'s resume in LaTeX, based off his template and the ones before it.
 
-This resume is based off a template I found a few years ago, which was a modified template, see the (C) list at the top for a history.
+It is to be used as a template for your own resume.
 
-Feel free to fork and edit.
-
-In linux run
+## Getting Started
+### Linux
 ```bash
-$ pdflatex resumeName.tex
+pdflatex resumeName.tex
 ```
-This should result in the creation of ``resumeName.pdf``
 
-Ubuntu requirements:
+## Requirements
+### Ubuntu
 ```bash
-$ sudo apt-get install texlive texlive-latex-extra
+sudo apt-get install texlive texlive-latex-extra
 ```
