@@ -1,6 +1,6 @@
 [![Build Status](https://travis-ci.org/sc932/resume.svg?branch=master)](https://travis-ci.org/sc932/resume)
 
-This is my resume (and CV) in LaTeX
+This is my resume in LaTeX
 
 This resume is based off a template I found a few years ago, which was a modified template, see the (C) list at the top for a history.
 
