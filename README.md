@@ -6,11 +6,11 @@ It is to be used as a template for your own resume.
 ## Getting Started
 ### Linux
 ```bash
-pdflatex resumeName.tex
+xelatex resumeName.tex
 ```
 
 ## Requirements
 ### Ubuntu
 ```bash
-sudo apt-get install texlive texlive-latex-extra
+sudo apt-get install texlive-xetex texlive-latex-extra
 ```
