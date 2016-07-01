@@ -38,9 +38,9 @@
   \end{tcolorbox}
 }
 \newcommand{\entry}[4]{%
-  \begin{tabularx}{\linewidth}{@{}Xl@{}}
-    \textbf{#1} & #2          \\
-    \textit{#3} & \textit{#4} \\
+  \begin{tabularx}{\linewidth}{@{}Xr@{}}
+    \textbf{#1} & \textbf{#4} \\
+    #3          & #2          \\
   \end{tabularx}
 }
 % Macros
@@ -49,7 +49,7 @@
 \newcommand{\twitter}[1]{\href{https://twitter.com/#1}{\texttt{@#1}}}
 
 \begin{document}
-  \begin{tabularx}{\linewidth}{@{}Xl@{}}
+  \begin{tabularx}{\linewidth}{@{}Xr@{}}
     \textbf{\Large{Scott Clark}} & \textbf{\today}                       \\
     \email{scott@scottclark.io}  & \website{scottclark.io}               \\
     \twitter{DrScottClark}       & Not looking for new job opportunities \\
