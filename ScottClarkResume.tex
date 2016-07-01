@@ -1,11 +1,10 @@
 \documentclass[letterpaper, 11pt]{article}
 
 %% Packages
-\usepackage[svgnames]{xcolor}
-\usepackage{framed}
 \usepackage{tocloft}
 \usepackage{etoolbox}
 \usepackage{geometry}
+\usepackage{tcolorbox}
 
 %% Settings
 \newlength{\outerbordwidth}
@@ -17,16 +16,21 @@
 \definecolor{shadecolor}{gray}{0.75}  % Outer background color of title bars (0 = black, 1 = white)
 \definecolor{shadecolorB}{gray}{0.93}  % Inner background color of title bars
 \geometry{margin=1in}
+\tcbset{%
+  colframe=white!93!black,
+  colback=white!93!black,
+  valign=center,
+  size=fbox,
+  sharp corners,
+  height=18pt,
+}
 
 %% Commands
 \newcommand{\resitem}[1]{\item #1 \vspace{-2pt}}
-\newcommand{\resheading}[1]{\vspace{8pt}
-  \parbox{\textwidth}{\setlength{\FrameSep}{\outerbordwidth}
-    \begin{shaded}
-
-\setlength{\fboxsep}{0pt}\framebox[\textwidth][l]{\setlength{\fboxsep}{4pt}\fcolorbox{shadecolorB}{shadecolorB}{\textbf{\sffamily{\mbox{~}\makebox[6.762in][l]{\large #1} \vphantom{p\^{E}}}}}}
-    \end{shaded}
-  }\vspace{-5pt}
+\newcommand{\resheading}[1]{%
+  \begin{tcolorbox}
+    \textsc{\textbf{\large{#1}}}
+  \end{tcolorbox}
 }
 \newcommand{\ressubheading}[4]{
 \begin{tabular*}{6.5in}{l@{\cftdotfill{\cftsecdotsep}\extracolsep{\fill}}r}
