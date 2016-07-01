@@ -6,6 +6,7 @@
 \usepackage{parskip}
 \usepackage{polyglossia}
 \usepackage{geometry}
+\usepackage{hyperref}
 \usepackage{tcolorbox}
 \usepackage{tabularx}
 
@@ -35,12 +36,21 @@
     \textit{#3} & \textit{#4} \\
   \end{tabularx}
 }
+\newcommand{\email}[1]{%
+  \href{mailto:#1}{\texttt{#1}}
+}
+\newcommand{\website}[1]{%
+  \href{http://#1}{\texttt{#1}}
+}
+\newcommand{\twitter}[1]{%
+  \href{https://twitter.com/#1}{\texttt{@#1}}
+}
 
 \begin{document}
   \begin{tabularx}{\linewidth}{@{}Xl@{}}
     \textbf{\Large{Scott Clark}} & \textbf{\today}                       \\
-    \texttt{scott@scottclark.io} & \texttt{www.scottclark.io}            \\
-    \texttt{@DrScottClark}       & Not looking for new job opportunities \\
+    \email{scott@scottclark.io}  & \website{scottclark.io}               \\
+    \twitter{DrScottClark}       & Not looking for new job opportunities \\
   \end{tabularx}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
