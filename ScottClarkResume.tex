@@ -24,12 +24,12 @@
 
 %% Commands
 \newcommand{\resitem}[1]{\item #1 \vspace{-2pt}}
-\newcommand{\resheading}[1]{%
+\renewcommand{\section}[1]{%
   \begin{tcolorbox}
     \textsc{\textbf{\large{#1}}}
   \end{tcolorbox}
 }
-\newcommand{\ressubheading}[4]{%
+\newcommand{\entry}[4]{%
   \begin{tabularx}{\linewidth}{@{}Xl@{}}
     \textbf{#1} & #2          \\
     \textit{#3} & \textit{#4} \\
@@ -48,21 +48,21 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\resheading{Education}
+\section{Education}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{itemize}
 
 \item
-	\ressubheading{Cornell University}{Ithaca, NY}{Ph.D. Applied Mathematics, M.S. Computer Science}{2008 - 2012}
+	\entry{Cornell University}{Ithaca, NY}{Ph.D. Applied Mathematics, M.S. Computer Science}{2008 - 2012}
 	\begin{itemize}
 		\resitem{Department of Energy Computational Science Graduate Fellow (Full Scholarship, 4 years)}
 		\resitem{Machine Learning, Data Science, Data Mining in bioinformatics and global optimization}
 	\end{itemize}
 
 \item
-	\ressubheading{Oregon State University}{Corvallis, OR}{B.Sc. Mathematics, B.Sc. Computational Physics, B.Sc. Physics}{2004 - 2008}
+	\entry{Oregon State University}{Corvallis, OR}{B.Sc. Mathematics, B.Sc. Computational Physics, B.Sc. Physics}{2004 - 2008}
 	\begin{itemize}
 		\resitem{Graduated Magna Cum Laude with minors in Actuarial Sciences and Mathematical Sciences}
 	\end{itemize}
@@ -71,20 +71,20 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\resheading{Research and Work Experience}
+\section{Research and Work Experience}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{itemize}
 
 \item
-	\ressubheading{SigOpt Inc - https://sigopt.com}{San Francisco, CA}{Co-founder and CEO}{November 2014 - current}
+	\entry{SigOpt Inc - https://sigopt.com}{San Francisco, CA}{Co-founder and CEO}{November 2014 - current}
 	\begin{itemize}
       \resitem{Helping lead a world class team to eliminate expensive trial and error from every experts workflow. Using cutting edge optimization behind a simple API to help tune machine learning models and build better products in a variety of fields.}
 	\end{itemize}
 
 \item
-	\ressubheading{Yelp Inc}{San Francisco, CA}{Data Mining Engineer and Lead on Ad Targeting Team}{July 2012 - December 2014}
+	\entry{Yelp Inc}{San Francisco, CA}{Data Mining Engineer and Lead on Ad Targeting Team}{July 2012 - December 2014}
 	\begin{itemize}
             \resitem{{\bf Optimization:} Co-developed and led team for MOE: the Metric Optimization Engine (\texttt{github.com/Yelp/MOE}, an \textbf{open source} optimization framework), found significant gains in different metrics across the organization using Bayesian Global Optimization algorithms.}
             \resitem{{\bf Targeting:} Implemented multi-armed bandit strategies for ad selection, sole targeting engineer on mobile app ads rollout, developed new location-based targeting algorithms, advised and helped develop other machine learning and math based targeting projects.}
@@ -92,44 +92,44 @@
 	\end{itemize}
 
 \item
-	\ressubheading{Bloomberg LP}{New York, NY}{Financial Software Development Intern}{Summer 2011}
+	\entry{Bloomberg LP}{New York, NY}{Financial Software Development Intern}{Summer 2011}
 	\begin{itemize}
     \resitem{Implemented statistical models to perform forward and backward portfolio analysis}
 	\end{itemize}
 
 \item
-	\ressubheading{DOE Joint Genome Institute (Lawrence Berkeley National Lab)}{Walnut Creek, CA}{Researcher in Analysis Group under Dr. Zhong Wang}{Summer 2010}
+	\entry{DOE Joint Genome Institute (Lawrence Berkeley National Lab)}{Walnut Creek, CA}{Researcher in Analysis Group under Dr. Zhong Wang}{Summer 2010}
 	\begin{itemize}
     \resitem{Used machine learning to mine TBs of genome data efficiently using novel likelihood function}
 	\end{itemize}
 
 \item 
-	\ressubheading{Los Alamos National Laboratory}{Los Alamos, NM}{Researcher in Metagenomics Group under Dr. Nick Hengartner}{Summer 2009}
+	\entry{Los Alamos National Laboratory}{Los Alamos, NM}{Researcher in Metagenomics Group under Dr. Nick Hengartner}{Summer 2009}
 	\begin{itemize}
     \resitem{Used statistical models to discover sequence alignments using parallel algorithms on GPUs}
 	\end{itemize}
 
 \item
-	\ressubheading{Oregon State University}{Corvallis, OR}{Research Assistant under Prof. Malgorzata Peszynska and Prof. Rubin Landau}{2005-2008}
+	\entry{Oregon State University}{Corvallis, OR}{Research Assistant under Prof. Malgorzata Peszynska and Prof. Rubin Landau}{2005-2008}
 	\begin{itemize}
 		\resitem{Finite element analysis with uncertainty and web-based teaching in \texttt{Java}}
 	\end{itemize}
 
 \item
-	\ressubheading{Max Plank Institute for the Physics of Complex Systems}{Dresden, Germany}{NSF REU Research Assistant under Prof. Steven Tomsovic}{Summer 2007}
+	\entry{Max Plank Institute for the Physics of Complex Systems}{Dresden, Germany}{NSF REU Research Assistant under Prof. Steven Tomsovic}{Summer 2007}
 	\begin{itemize}
 		\resitem{Research on extreme value statistics in \texttt{MATLAB} and \texttt{FORTRAN}}
 	\end{itemize}
 
 \item
-	\ressubheading{University of California: Davis}{Davis, CA}{NSF REU Research Assistant under Prof. Daniel Cox}{Summer 2006}
+	\entry{University of California: Davis}{Davis, CA}{NSF REU Research Assistant under Prof. Daniel Cox}{Summer 2006}
 	\begin{itemize}
 		\resitem{Computational biophysics research as applied to protein folding in \texttt{Java}}
 	\end{itemize}
 
 \end{itemize}
 
-\resheading{Writing and Awards}
+\section{Writing and Awards}
 
 \begin{itemize}
 
@@ -143,7 +143,7 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\resheading{Skills}
+\section{Skills}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -161,20 +161,20 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\resheading{Selected Open Source Projects}
+\section{Selected Open Source Projects}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{itemize}
 
 \item
-    \ressubheading{SigOpt Examples (\texttt{github.com/sigopt/sigopt-examples})}{Python}{Examples of using SigOpt to tune ML algorithms.}{2014 - current}
+    \entry{SigOpt Examples (\texttt{github.com/sigopt/sigopt-examples})}{Python}{Examples of using SigOpt to tune ML algorithms.}{2014 - current}
     \begin{itemize}
         \resitem{Examples of using SigOpt to tune everything from sklearn to beating Vegas and beyond.}
 	\end{itemize}
 
 \item
-    \ressubheading{MOE: Metric Optimization Engine (\texttt{github.com/Yelp/MOE})}{Python, C++, CUDA}{A global, black box optimization engine for real world metric optimization}{2010 - 2015}
+    \entry{MOE: Metric Optimization Engine (\texttt{github.com/Yelp/MOE})}{Python, C++, CUDA}{A global, black box optimization engine for real world metric optimization}{2010 - 2015}
     \begin{itemize}
         \resitem{Implemented throughout Yelp, optimizing ad metrics. 2nd most popular open source project.}
         \resitem{Talk: \texttt{bit.ly/1plYZA2}, Slides: \texttt{slidesha.re/1zOrOJy}, Blog: \texttt{bit.ly/1x73xdr}}
@@ -182,7 +182,7 @@
 	\end{itemize}
 
 \item
-    \ressubheading{ALE: Assembly Likelihood Estimator (\texttt{github.com/sc932/ALE})}{C, Python}{Probabilistic evaluation of genome assemblies}{2010 - 2013}
+    \entry{ALE: Assembly Likelihood Estimator (\texttt{github.com/sc932/ALE})}{C, Python}{Probabilistic evaluation of genome assemblies}{2010 - 2013}
     \begin{itemize}
         \resitem{Uses statistical function to score and rank genome assemblies, published in Bioinformatics}
 	\end{itemize}
