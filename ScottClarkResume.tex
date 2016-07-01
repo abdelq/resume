@@ -6,6 +6,8 @@
 \usepackage{parskip}
 \usepackage{polyglossia}
 \usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
 \usepackage{hyperref}
 \usepackage{tcolorbox}
 \usepackage{tabularx}
@@ -14,6 +16,12 @@
 %\setmainfont{}
 \setmainlanguage{english}
 \geometry{margin=1in}
+
+% Header/Footer
+\pagestyle{fancy}
+\cfoot{\thepage{} of \pageref{LastPage}}
+\renewcommand{\headrulewidth}{0pt}
+
 \hypersetup{%
   pdftitle=Scott Clark -- Resume,
   pdfsubject=Resume,
