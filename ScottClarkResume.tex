@@ -1,16 +1,12 @@
 \documentclass[letterpaper, 11pt]{article}
 
 %% Packages
-\usepackage{tocloft}
-\usepackage{etoolbox}
 \usepackage{geometry}
 \usepackage{tcolorbox}
+\usepackage{tabularx}
 
 %% Settings
-\newlength{\outerbordwidth}
 \pagestyle{empty}
-\robustify\cftdotfill
-\setlength{\outerbordwidth}{3pt}  % Width of border outside of title bars
 \geometry{margin=1in}
 \tcbset{%
   colframe=white!93!black,
@@ -28,11 +24,12 @@
     \textsc{\textbf{\large{#1}}}
   \end{tcolorbox}
 }
-\newcommand{\ressubheading}[4]{
-\begin{tabular*}{6.5in}{l@{\cftdotfill{\cftsecdotsep}\extracolsep{\fill}}r}
-		\textbf{#1} & #2 \\
-		\textit{#3} & \textit{#4} \\
-\end{tabular*}\vspace{-6pt}}
+\newcommand{\ressubheading}[4]{%
+  \begin{tabularx}{\linewidth}{@{}Xl@{}}
+    \textbf{#1} & #2          \\
+    \textit{#3} & \textit{#4} \\
+  \end{tabularx}
+}
 
 \begin{document}
 
