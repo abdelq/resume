@@ -1,20 +1,26 @@
-[![Build Status](https://travis-ci.org/sc932/resume.svg?branch=master)](https://travis-ci.org/sc932/resume)
+# Resume
+This is [Scott Clark](https://github.com/sc932)'s resume in LaTeX, based off his template and the ones before it.
 
-This is my resume (and CV) in LaTeX
+It is to be used as a template for your own resume.
 
-This resume is based off a template I found a few years ago, which was a modified template, see the (C) list at the top for a history.
-
-I have also included the original templates (along the path to my resume).
-
-Feel free to fork and edit.
-
-In linux run
+## Getting Started
+### Linux
 ```bash
-$ pdflatex resumeName.tex
+xelatex resumeName.tex
 ```
-This should result in the creation of ``resumeName.pdf``
 
-Ubuntu requirements:
+## Requirements
+### Ubuntu
 ```bash
-$ sudo apt-get install texlive texlive-latex-extra
+sudo apt-get install texlive-xetex texlive-latex-extra
 ```
+
+## Credits
+* [Matthew M. Boedicker](https://github.com/mmb)
+* [David Grant](https://github.com/dgrant)
+* [Nathaniel Johnston](https://github.com/nathanieljohnston)
+* [Scott Clark](https://github.com/sc932)
+* [Abdelhakim Qbaich](https://github.com/abdelq)
+
+## License
+This work is licensed under a [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-nc-sa/4.0/).
