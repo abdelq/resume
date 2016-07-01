@@ -1,22 +1,21 @@
-\documentclass[letterpaper,11pt]{article}
-\newlength{\outerbordwidth}
-\pagestyle{empty}
-\raggedbottom
-\raggedright
+\documentclass[letterpaper, 11pt]{article}
+
+%% Packages
 \usepackage[svgnames]{xcolor}
 \usepackage{framed}
 \usepackage{tocloft}
 \usepackage{etoolbox}
-\robustify\cftdotfill
 
-%-----------------------------------------------------------
-%Edit these values as you see fit
+%% Settings
+\newlength{\outerbordwidth}
+\pagestyle{empty}
+\raggedbottom
+\raggedright
+\robustify\cftdotfill
 \setlength{\outerbordwidth}{3pt}  % Width of border outside of title bars
 \definecolor{shadecolor}{gray}{0.75}  % Outer background color of title bars (0 = black, 1 = white)
 \definecolor{shadecolorB}{gray}{0.93}  % Inner background color of title bars
-
-%-----------------------------------------------------------
-%Margin setup
+% Margin setup
 \setlength{\evensidemargin}{-0.25in}
 \setlength{\headheight}{-0.25in}
 \setlength{\headsep}{0in}
@@ -30,8 +29,7 @@
 \setlength{\topskip}{0in}
 \setlength{\voffset}{0.1in}
 
-%-----------------------------------------------------------
-%Custom commands
+%% Commands
 \newcommand{\resitem}[1]{\item #1 \vspace{-2pt}}
 \newcommand{\resheading}[1]{\vspace{8pt}
   \parbox{\textwidth}{\setlength{\FrameSep}{\outerbordwidth}
@@ -41,14 +39,12 @@
     \end{shaded}
   }\vspace{-5pt}
 }
-
 \newcommand{\ressubheading}[4]{
 \begin{tabular*}{6.5in}{l@{\cftdotfill{\cftsecdotsep}\extracolsep{\fill}}r}
 		\textbf{#1} & #2 \\
 		\textit{#3} & \textit{#4} \\
 \end{tabular*}\vspace{-6pt}}
 
-%-----------------------------------------------------------
 \begin{document}
 
 \begin{tabular*}{7in}{l@{\extracolsep{\fill}}r}
