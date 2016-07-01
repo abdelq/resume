@@ -43,15 +43,10 @@
     \textit{#3} & \textit{#4} \\
   \end{tabularx}
 }
-\newcommand{\email}[1]{%
-  \href{mailto:#1}{\texttt{#1}}
-}
-\newcommand{\website}[1]{%
-  \href{http://#1}{\texttt{#1}}
-}
-\newcommand{\twitter}[1]{%
-  \href{https://twitter.com/#1}{\texttt{@#1}}
-}
+% Macros
+\newcommand{\email}[1]{\href{mailto:#1}{\texttt{#1}}}
+\newcommand{\website}[1]{\href{http://#1}{\texttt{#1}}}
+\newcommand{\twitter}[1]{\href{https://twitter.com/#1}{\texttt{@#1}}}
 
 \begin{document}
   \begin{tabularx}{\linewidth}{@{}Xl@{}}
@@ -75,16 +70,16 @@
 
   \section{Research and Work Experience}
 
-  \entry{SigOpt Inc - https://sigopt.com}{San Francisco, CA}{Co-founder and CEO}{November 2014 - current}
+  \entry{SigOpt Inc - \website{sigopt.com}}{San Francisco, CA}{Co-founder and CEO}{November 2014 - current}
   \begin{itemize}
     \item{Helping lead a world class team to eliminate expensive trial and error from every experts workflow. Using cutting edge optimization behind a simple API to help tune machine learning models and build better products in a variety of fields.}
   \end{itemize}
 
   \entry{Yelp Inc}{San Francisco, CA}{Data Mining Engineer and Lead on Ad Targeting Team}{July 2012 - December 2014}
   \begin{itemize}
-    \item{{\bf Optimization:} Co-developed and led team for MOE: the Metric Optimization Engine (\texttt{github.com/Yelp/MOE}, an \textbf{open source} optimization framework), found significant gains in different metrics across the organization using Bayesian Global Optimization algorithms.}
+    \item{{\bf Optimization:} Co-developed and led team for MOE: the Metric Optimization Engine (\website{github.com/Yelp/MOE}, an \textbf{open source} optimization framework), found significant gains in different metrics across the organization using Bayesian Global Optimization algorithms.}
     \item{{\bf Targeting:} Implemented multi-armed bandit strategies for ad selection, sole targeting engineer on mobile app ads rollout, developed new location-based targeting algorithms, advised and helped develop other machine learning and math based targeting projects.}
-    \item{{\bf Recruiting:} Created, implemented, and directed \texttt{yelp.com/dataset\_challenge}, gave tech talks across the country, led events, gave hundreds of technical interviews, closed candidates.}
+    \item{{\bf Recruiting:} Created, implemented, and directed \website{yelp.com/dataset\_challenge}, gave tech talks across the country, led events, gave hundreds of technical interviews, closed candidates.}
   \end{itemize}
 
   \entry{Bloomberg LP}{New York, NY}{Financial Software Development Intern}{Summer 2011}
@@ -120,11 +115,11 @@
   \section{Writing and Awards}
 
   \begin{itemize}
-    \item {\bf 2016 Forbes 30 Under 30:} Enterprise Tech. \texttt{http://onforb.es/1OILpBZ}
-    \item {\bf Department of Energy Computational Science Graduate Fellow:} Four year full fellowship. $\sim$20 awarded nationally per year. Won the Communicating Science award (\texttt{bit.ly/VbcTZK}).
-    \item {\bf SigOpt Blog:} Posts talking about using SigOpt to optimize everything (\texttt{blog.sigopt.com}).
-    \item {\bf Yelp Blog:} Wrote several posts announcing the open sourcing of MOE, the Yelp Dataset Challenge and more. \texttt{bit.ly/1x73xdr}, \texttt{bit.ly/1oCCZvv}, \texttt{bit.ly/1sOsEBS}, \texttt{bit.ly/1plX7Hk}
-    \item {\bf Press:} WSJ: \texttt{on.wsj.com/VaOvqQ}, Cornell: \texttt{bit.ly/1oB2dzm},  DIEXIS: \texttt{bit.ly/1oofbl4}
+    \item {\bf 2016 Forbes 30 Under 30:} Enterprise Tech. \website{onforb.es/1OILpBZ}
+    \item {\bf Department of Energy Computational Science Graduate Fellow:} Four year full fellowship. $\sim$20 awarded nationally per year. Won the Communicating Science award (\website{bit.ly/VbcTZK}).
+    \item {\bf SigOpt Blog:} Posts talking about using SigOpt to optimize everything (\website{blog.sigopt.com}).
+    \item {\bf Yelp Blog:} Wrote several posts announcing the open sourcing of MOE, the Yelp Dataset Challenge and more. \website{bit.ly/1x73xdr}, \website{bit.ly/1oCCZvv}, \website{bit.ly/1sOsEBS}, \website{bit.ly/1plX7Hk}
+    \item {\bf Press:} WSJ: \website{on.wsj.com/VaOvqQ}, Cornell: \website{bit.ly/1oB2dzm},  DIEXIS: \website{bit.ly/1oofbl4}
   \end{itemize}
 
   \section{Skills}
@@ -138,19 +133,19 @@
 
   \section{Selected Open Source Projects}
   
-  \entry{SigOpt Examples (\texttt{github.com/sigopt/sigopt-examples})}{Python}{Examples of using SigOpt to tune ML algorithms.}{2014 - current}
+  \entry{SigOpt Examples (\website{github.com/sigopt/sigopt-examples})}{Python}{Examples of using SigOpt to tune ML algorithms.}{2014 - current}
   \begin{itemize}
     \item{Examples of using SigOpt to tune everything from sklearn to beating Vegas and beyond.}
   \end{itemize}
 
-  \entry{MOE: Metric Optimization Engine (\texttt{github.com/Yelp/MOE})}{Python, C++, CUDA}{A global, black box optimization engine for real world metric optimization}{2010 - 2015}
+  \entry{MOE: Metric Optimization Engine (\website{github.com/Yelp/MOE})}{Python, C++, CUDA}{A global, black box optimization engine for real world metric optimization}{2010 - 2015}
   \begin{itemize}
     \item{Implemented throughout Yelp, optimizing ad metrics. 2nd most popular open source project.}
-    \item{Talk: \texttt{bit.ly/1plYZA2}, Slides: \texttt{slidesha.re/1zOrOJy}, Blog: \texttt{bit.ly/1x73xdr}}
+    \item{Talk: \website{bit.ly/1plYZA2}, Slides: \website{slidesha.re/1zOrOJy}, Blog: \website{bit.ly/1x73xdr}}
     \item{Presented to executives, universities, conferences and companies around the country.}
   \end{itemize}
 
-  \entry{ALE: Assembly Likelihood Estimator (\texttt{github.com/sc932/ALE})}{C, Python}{Probabilistic evaluation of genome assemblies}{2010 - 2013}
+  \entry{ALE: Assembly Likelihood Estimator (\website{github.com/sc932/ALE})}{C, Python}{Probabilistic evaluation of genome assemblies}{2010 - 2013}
   \begin{itemize}
     \item{Uses statistical function to score and rank genome assemblies, published in Bioinformatics}
   \end{itemize}
