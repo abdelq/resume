@@ -4,13 +4,14 @@ This is [Scott Clark](https://github.com/sc932)'s resume in LaTeX, based off his
 It is to be used as a template for your own resume.
 
 ## Getting Started
-### Linux
+### GNU/Linux
 ```bash
-xelatex resumeName.tex
+xelatex ScottClarkResume.tex
 ```
 
 ## Requirements
-### Ubuntu
+### GNU/Linux
+#### Debian/Ubuntu
 ```bash
 sudo apt-get install texlive-xetex texlive-latex-extra
 ```
