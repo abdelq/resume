@@ -10,12 +10,13 @@
 \usepackage{lastpage}
 \usepackage{tcolorbox}
 \usepackage{tabularx}
+\usepackage{xparse}
 \usepackage{hyperref}
 %% Debug
 %\usepackage[l2tabu, orthodox]{nag}
 
 % Settings
-%\setmainfont{}           % Font (e.g., Times New Roman)
+%\setmainfont{}            % Font (e.g., Times New Roman)
 \setmainlanguage{english} % Language
 \geometry{margin=1in}     % Margins
 %% Header/Footer
@@ -58,9 +59,13 @@
 }
 
 % Macros
+\DeclareDocumentCommand{\website}{mo}{%
+  \IfNoValueTF{#2}%
+  {\href{http://#1}{\texttt{#1}}}%
+  {\href{http://#1}{\texttt{#2}}}%
+}
+\newcommand{\twitter}[1]{\website{twitter.com/#1}[@#1]}
 \newcommand{\email}[1]{\href{mailto:#1}{\texttt{#1}}}
-\newcommand{\website}[1]{\href{http://#1}{\texttt{#1}}}
-\newcommand{\twitter}[1]{\href{https://twitter.com/#1}{\texttt{@#1}}}
 
 \begin{document}
   \begin{tabularx}{\linewidth}{@{}Xr@{}}
