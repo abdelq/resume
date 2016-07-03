@@ -1,6 +1,6 @@
 \documentclass[letterpaper, 11pt]{article}
 
-%% Packages
+% Packages
 \usepackage{fontspec}
 \usepackage{microtype}
 \usepackage{parskip}
@@ -8,29 +8,20 @@
 \usepackage{geometry}
 \usepackage{fancyhdr}
 \usepackage{lastpage}
-\usepackage{hyperref}
 \usepackage{tcolorbox}
 \usepackage{tabularx}
+\usepackage{hyperref}
 
-%% Settings
-%\setmainfont{}
-\setmainlanguage{english}
-\geometry{margin=1in}
-
-% Header/Footer
+% Settings
+%\setmainfont{}           % Font (e.g., Times New Roman)
+\setmainlanguage{english} % Language
+\geometry{margin=1in}     % Margins
+%% Header/Footer
 \pagestyle{fancy}
 \cfoot{\thepage{} of \pageref{LastPage}}
 \renewcommand{\headrulewidth}{0pt}
-\setlength{\headheight}{14pt} 
-
-\hypersetup{%
-  pdftitle=Scott Clark -- Resume,
-  pdfsubject=Resume,
-  pdfauthor=Scott Clark,
-  pdfcreator=Scott Clark,
-  pdfproducer=Scott Clark,
-  hidelinks,
-}
+\setlength{\headheight}{14pt}
+%% Color Box
 \tcbset{%
   colframe=white!93!black,
   colback=white!93!black,
@@ -39,8 +30,17 @@
   sharp corners,
   height=18pt,
 }
+%% Metadata
+\hypersetup{%
+  pdftitle=Scott Clark -- Resume,
+  pdfsubject=Resume,
+  pdfauthor=Scott Clark,
+  pdfcreator=Scott Clark,
+  pdfproducer=Scott Clark,
+  hidelinks,
+}
 
-%% Commands
+% Commands
 \renewcommand{\section}[1]{%
   \begin{tcolorbox}
     \textsc{\textbf{\large{#1}}}
@@ -52,6 +52,7 @@
     #3          & #4          \\
   \end{tabularx}
 }
+
 % Macros
 \newcommand{\email}[1]{\href{mailto:#1}{\texttt{#1}}}
 \newcommand{\website}[1]{\href{http://#1}{\texttt{#1}}}
