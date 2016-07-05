@@ -16,7 +16,7 @@
 %\usepackage[l2tabu, orthodox]{nag}
 
 % Settings
-%\setmainfont{}            % Font (e.g., Times New Roman)
+%\setmainfont{}           % Font (e.g., Times New Roman)
 \setmainlanguage{english} % Language
 \geometry{margin=1in}     % Margins
 %% Header/Footer
@@ -45,7 +45,7 @@
 %% Debug
 %\geometry{showframe}
 
-% Commands
+% Commands/Macros
 \renewcommand{\section}[1]{%
   \begin{tcolorbox}
     \textsc{\textbf{\large{#1}}}
@@ -57,8 +57,6 @@
     #3          & #4          \\
   \end{tabularx}
 }
-
-% Macros
 \DeclareDocumentCommand{\website}{mo}{%
   \IfNoValueTF{#2}%
   {\href{http://#1}{\texttt{#1}}}%
@@ -68,6 +66,7 @@
 \newcommand{\email}[1]{\href{mailto:#1}{\texttt{#1}}}
 
 \begin{document}
+  % Header
   \begin{tabularx}{\linewidth}{@{}Xr@{}}
     \textbf{\Large{Scott Clark}} & \textbf{\today}                       \\
     \email{scott@scottclark.io}  & \website{scottclark.io}               \\
