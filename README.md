@@ -11,7 +11,7 @@ xelatex ScottClarkResume.tex
 
 ## Requirements
 ### GNU/Linux
-#### Debian/Ubuntu
+#### Debian, Ubuntu, Linux Mint
 ```bash
 sudo apt-get install texlive-xetex texlive-latex-extra
 ```
