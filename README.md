@@ -16,6 +16,21 @@ xelatex ScottClarkResume.tex
 sudo apt-get install texlive-xetex texlive-latex-extra
 ```
 
+## Packages
+This is a list of the packages used in the project, with links to their CTAN page for more information.
+* [fontspec](https://www.ctan.org/pkg/fontspec)
+* [microtype](https://www.ctan.org/pkg/microtype)
+* [parskip](https://www.ctan.org/pkg/parskip)
+* [polyglossia](https://www.ctan.org/pkg/polyglossia)
+* [geometry](https://www.ctan.org/pkg/geometry)
+* [fancyhdr](https://www.ctan.org/pkg/fancyhdr)
+* [lastpage](https://www.ctan.org/pkg/lastpage)
+* [tcolorbox](https://www.ctan.org/pkg/tcolorbox)
+* [tabularx](https://www.ctan.org/pkg/tabularx)
+* [xparse](https://www.ctan.org/pkg/xparse)
+* [hyperref](https://www.ctan.org/pkg/hyperref)
+* [nag](https://www.ctan.org/pkg/nag)
+
 ## Credits
 * [Matthew M. Boedicker](https://github.com/mmb)
 * [David Grant](https://github.com/dgrant)
